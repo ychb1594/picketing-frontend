@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function ChatbotMock() {
-  const API_BASE = "http://3.38.101.140:8000";
+  const API_BASE = "/api";
 
   const navigate = useNavigate();
 

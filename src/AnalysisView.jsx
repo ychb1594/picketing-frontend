@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const API_BASE = "http://3.38.101.140:8000";
+const API_BASE = "/api";
 
 /* =======================================================
    SUMMARY 안전 추출 함수
