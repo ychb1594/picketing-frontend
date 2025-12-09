@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function BrandList() {
-  const API_BASE = "http://3.38.101.140:8000";
+  const API_BASE = "/api";
   const navigate = useNavigate();
 
   const [brandList, setBrandList] = useState([]);
