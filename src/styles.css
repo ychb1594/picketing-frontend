@@ -1,0 +1,65 @@
+/* AI 피키 메인 - 글로벌 스타일 */
+
+/* SUIT 폰트 (CDN) */
+@import url('https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css');
+
+/* CSS 변수 - 디자인 토큰 */
+:root {
+  /* 컬러 */
+  --grey-mono-white: #ffffff;
+  --grey-mono-black: #2a2a2a;
+  --grey-g1: #f9fafb;
+  --grey-g2: #f2f3f6;
+  --grey-g4: #d0d3db;
+  --grey-g5: #acb2bd;
+  --grey-g6: #8c929e;
+  --grey-g7: #4f525a;
+  
+  --key-bl-2: #aacaff;
+  
+  --form-placeholder: #acb2bd;
+  --state-unselected: #d0d3db;
+  --divider: #f2f3f6;
+
+  /* 폰트 사이즈 */
+  --font-size-h4: 20px;
+  --font-size-btn-m: 17px;
+  --font-size-s: 15px;
+  --font-size-btn-s: 13px;
+  --font-size-btn-ghost-xs: 13px;
+  --font-size-form-placeholder: 14px;
+
+  /* 스페이싱 */
+  --space-0: 0px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+
+  /* 보더 라디우스 */
+  --border-radius-s: 8px;
+  --border-radius-xl: 20px;
+  --border-radius-round: 100px;
+}
+
+/* 기본 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'SUIT Variable', 'SUIT', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--grey-g1);
+}
+
+/* 그림자 */
+.paper-shadow {
+  box-shadow: 0px 0px 16px 0px rgba(79, 82, 90, 0.1);
+}
+

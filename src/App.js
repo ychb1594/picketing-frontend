@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ChatbotMock from "./ChatbotMock";
+import BrandList from "./BrandList";
+import AnalysisView from "./AnalysisView";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<BrandList />} />           // 목록 + 등록
+        <Route path="/chatbot/:brandId" element={<ChatbotMock />} />  // 브랜드별 챗봇
+        <Route path="/analysis/:reportId" element={<AnalysisView />} /> // 분석 결과
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
